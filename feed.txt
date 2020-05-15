@@ -1,0 +1,46 @@
+--- 7 ---
+1) валидация
+2) нарушена вложенность
+должно быть так
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/all.css">
+        <title>Атрибут style</title>
+        <style rel="stylesheet">
+            blockquote {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="level2.html">level2</a></li>
+                    <li><a href="level3.html">level3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <blockquote style="color:red">
+                <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+                <footer>—Aldous Huxley, <cite>Brave New World</cite></footer>
+            </blockquote>
+        </div>
+    </body>
+</html>
+
+http://joxi.ru/KAgqddqfXd38Xm это лишнее
+
+1) обратиться только к тем ссылкам, значение атрибута href которых начинается с https и окрасит их в красный цвет (color: #f00;)
+	https://s3.amazonaws.com/tz9i2p4ymw/38o93402hc03p6024.jpg - невнимательность a[href^="https"]
+2) окрасит link2 в оранжевый цвет (color: #ff8d00;)
+	a[title="youtube"] {
+		color: #ff8d00;
+	}
+	http://joxi.ru/Q2KQGGQCwlGKbr
+
+http://joxi.ru/823oEEoiD0GvD2

@@ -1,0 +1,48 @@
+.style_atribute{
+    color:red;
+}
+blockquote {
+    color:green;
+}
+blockquote p {
+    color:green;
+}
+blockquote cite {
+    color:green;
+}
+blockquote footer{
+    color:green;
+}
+a[href^="http://"]{
+    color: #f00;
+}
+.link2{
+    color:#ff8d00;
+}
+ul + p {
+    font-size:26px;
+} 
+a[title] { 
+    border: 1px solid #067b09;
+}
+p#greycol {
+  color:grey;
+}
+div+h3+p{
+    color:green;
+}
+.text-box > h3 {
+    color: pink;
+}
+div > div > p {
+    color:red;
+}
+.text-box h3[title="text"]{
+  color: blue;
+}
+div+h3 {
+    color: inherit;
+}
+[class^="yellow"] {
+  color: yellow;
+}
